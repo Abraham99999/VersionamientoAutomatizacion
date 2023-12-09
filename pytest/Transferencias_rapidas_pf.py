@@ -112,8 +112,6 @@ class btest(unittest.TestCase):
                 allure.attach(driver.get_screenshot_as_png(), name="Error inesperado",attachment_type=AttachmentType.PNG)
                 allure.attach(driver.get_screenshot_as_png(), name="Error inesperado",
                               attachment_type=AttachmentType.PNG)
-                allure.attach(driver.get_screenshot_as_png(), name="Error inesperado",
-                              attachment_type=AttachmentType.PNG)
         boton_cerrar_sesion = wait.until(EC.presence_of_element_located((By.XPATH, "//p[text()='Sí, cerrar sesión']")))
         boton_cerrar_sesion.click()
 
